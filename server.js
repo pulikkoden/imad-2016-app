@@ -5,6 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var content = {
+  title:'Article one| Anil Varghese',
+  heading:'Article one',
+  date:'September 1 2016',
+  content:'This is my sample content for one'
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
