@@ -1,6 +1,6 @@
 var button = document.getElementById('counter');
 var counter= 0;
-button.onClick = function(){
+button.onclick = function(){
     
     //send request for counter to server
     
